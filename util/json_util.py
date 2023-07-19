@@ -12,5 +12,5 @@ def get_json_size_kb(data):
     :return:
     """
     json_str = json.dumps(data)
-    print(len(json_str))
-    return json_str
+    print(len(json_str) / 1024)
+    return len(json_str) / 1024
