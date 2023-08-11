@@ -16,7 +16,7 @@ def tseccomputer_insert(computer_id, computer_name, computer_ip, computer_mac, c
     cascade_server_ip, clean_tool_is_hide_client)
     VALUES
     ({computer_id}, '测试主机{computer_name}', '{computer_ip}', '{computer_mac}', 12151515, '{computer_guid}',
-    NULL, NULL, NULL, 'Y', '01000000000000000000', '000000', '系统根部门', NULL, NULL, '测试人员1',
+    NULL, NULL, NULL, 'Y', '01000000000000000000', '350200', '系统根部门', NULL, NULL, '测试人员1',
     2, 2, NULL, NULL, NULL, '测试人员1', NULL, NULL, NULL, NULL, NULL, NULL, 0, 'H', 'N',
     NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', NULL, NULL, NULL, NULL, 4, NULL,
     1, NULL, NULL, '', NULL, 2, NULL, 0, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL,

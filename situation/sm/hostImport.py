@@ -4,7 +4,7 @@ from situation.database import host_manager
 
 # Establish a connection to the database
 connection = mysql.connector.connect(
-    host="10.66.77.40",
+    host="10.66.77.35",
     user="security",
     password="s2u1p3e4r",
     database="host_manager"
