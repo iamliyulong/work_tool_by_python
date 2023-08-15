@@ -19,7 +19,7 @@ connection = mysql.connector.connect(
 
 # Create a cursor object to execute SQL queries
 cursor = connection.cursor()
-sql = "select asset_id  from tsec_asset"
+sql = "select asset_id from tsec_asset"
 cursor.execute(sql)
 asset_ids = cursor.fetchall()
 
@@ -37,15 +37,15 @@ for i in asset_ids:
     }
     alarm_data.append(entry)
 
-alarm_tmp = {
-    "assetId": 'c12abe3e-3829-11ee-81aa-70321708e081',
-    "startTime": str(int(time.time() * 1000)),  # Current time in milliseconds
-    "alarmName": "SNMP服务获取数据失败",
-    "alarmType": "网络告警",
-    "alarmDesc": "SNMP用户名错误",
-    "alarmStatus": f'{random.choice([0, 1])}'
-}
-alarm_data.append(alarm_tmp)
+# alarm_tmp = {
+#     "assetId": 'c12abe3e-3829-11ee-81aa-70321708e081',
+#     "startTime": str(int(time.time() * 1000)),  # Current time in milliseconds
+#     "alarmName": "SNMP服务获取数据失败",
+#     "alarmType": "网络告警",
+#     "alarmDesc": "SNMP用户名错误",
+#     "alarmStatus": f'{random.choice([0, 1])}'
+# }
+# alarm_data.append(alarm_tmp)
 
 json_alarm = {
     "updateTime": 1665986533836,
