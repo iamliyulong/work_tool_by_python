@@ -4,7 +4,7 @@ import uuid
 
 from util.kafka_util import send_message_with_key
 
-topic = 'sendD7AD16D7F85F4931A3BA077B7FF6DDBA'  # 替换成你的Kafka主题名
+topic = 'send7FE2233178B14FCEBB7B326BC9C8D543'  # 替换成你的Kafka主题名
 key = 'asset'  # 替换成你的消息key
 # 资产在线状态
 asset_data = []
@@ -18,7 +18,15 @@ for i in range(1, 3):
         "assetCode": assetId,
         "dutyPerson": "1",
         "assetGroupId": '1',
-        "onlineStatus": f'{random.choice([0, 1])}'
+        "onlineStatus": f'{random.choice([0, 1])}',
+        "assetGroupName": '对外服务域',
+        "assetVendorName": '曙光H620-G30S1',
+        "assetOsName": '中科方德',
+        "cpuInfo": '飞腾2000',
+        "netCardNum": 1,
+        "diskCapacity": '240SSD+2TBHDD',
+        "memCapacity": '64GB',
+        "purchaseTime": 1665986533836,
     }
     asset_data.append(entry)
 
@@ -32,7 +40,15 @@ for i in range(1, 18):
         "assetCode": assetId,
         "dutyPerson": "1",
         "assetGroupId": '2',
-        "onlineStatus": f'{random.choice([0, 1])}'
+        "onlineStatus": f'{random.choice([0, 1])}',
+        "assetGroupName": '对外服务域',
+        "assetVendorName": '曙光H620-G30S1',
+        "assetOsName": '中科方德',
+        "cpuInfo": '飞腾2000',
+        "netCardNum": 1,
+        "diskCapacity": '240SSD+2TBHDD',
+        "memCapacity": '64GB',
+        "purchaseTime": 1665986533836,
     }
     asset_data.append(entry)
 
@@ -46,7 +62,15 @@ for i in range(1, 2):
         "assetCode": assetId,
         "dutyPerson": "1",
         "assetGroupId": '3',
-        "onlineStatus": f'{random.choice([0, 1])}'
+        "onlineStatus": f'{random.choice([0, 1])}',
+        "assetGroupName": '安全服务域',
+        "assetVendorName": '曙光H620-G30S1',
+        "assetOsName": '中科方德',
+        "cpuInfo": '飞腾2000',
+        "netCardNum": 1,
+        "diskCapacity": '240SSD+2TBHDD',
+        "memCapacity": '64GB',
+        "purchaseTime": 1665986533836,
     }
     asset_data.append(entry)
 
@@ -60,7 +84,15 @@ for i in range(1, 4):
         "assetCode": assetId,
         "dutyPerson": "1",
         "assetGroupId": '4',
-        "onlineStatus": f'{random.choice([0, 1])}'
+        "onlineStatus": f'{random.choice([0, 1])}',
+        "assetGroupName": '安全服务域',
+        "assetVendorName": '曙光H620-G30S1',
+        "assetOsName": '中科方德',
+        "cpuInfo": '飞腾2000',
+        "netCardNum": 1,
+        "diskCapacity": '240SSD+2TBHDD',
+        "memCapacity": '64GB',
+        "purchaseTime": 1665986533836,
     }
     asset_data.append(entry)
 
@@ -74,7 +106,15 @@ for i in range(1, 19):
         "assetCode": assetId,
         "dutyPerson": "1",
         "assetGroupId": '5',
-        "onlineStatus": f'{random.choice([0, 1])}'
+        "onlineStatus": f'{random.choice([0, 1])}',
+        "assetGroupName": '办公区域',
+        "assetVendorName": '曙光H620-G30S1',
+        "assetOsName": '中科方德',
+        "cpuInfo": '飞腾2000',
+        "netCardNum": 1,
+        "diskCapacity": '240SSD+2TBHDD',
+        "memCapacity": '64GB',
+        "purchaseTime": 1665986533836,
     }
     asset_data.append(entry)
 

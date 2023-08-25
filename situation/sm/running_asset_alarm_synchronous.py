@@ -6,7 +6,7 @@ import mysql.connector
 
 from util.kafka_util import send_message_with_key
 
-topic = 'sendD7AD16D7F85F4931A3BA077B7FF6DDBA'  # 替换成你的Kafka主题名
+topic = 'send7FE2233178B14FCEBB7B326BC9C8D543'  # 替换成你的Kafka主题名
 key = 'asset'  # 替换成你的消息key
 
 # Establish a connection to the database
